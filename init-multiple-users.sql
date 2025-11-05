@@ -1,0 +1,4 @@
+
+CREATE USER vish WITH PASSWORD 'vishal';
+CREATE DATABASE learning OWNER vish;
+GRANT ALL PRIVILEGES ON DATABASE learning TO vish;

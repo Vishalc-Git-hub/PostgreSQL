@@ -1,0 +1,23 @@
+
+
+
+
+POST  http://127.0.0.1:8000/coursesAPI/courses/
+Content-Type: application/json
+
+
+{
+  "instructor": 1,
+  "category": 1,
+  "title": "Python for Beginners",
+  "subtitle": "A complete intro to Python",
+  "description": "Covers basics, loops, functions, and OOP.",
+  "level": "Beginner",
+  "price": 499.00,
+  "is_published": true
+}
+
+
+
+
+

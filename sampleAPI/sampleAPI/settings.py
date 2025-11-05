@@ -34,6 +34,7 @@ AUTH_USER_MODEL = 'usersAPI.User'
 
 
 INSTALLED_APPS = [
+    "coursesAPI",
     "usersAPI",
     "django.contrib.admin",
     "django.contrib.auth",

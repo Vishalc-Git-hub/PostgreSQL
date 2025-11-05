@@ -8,6 +8,7 @@ from .models import User
 from .serializers import UserSerializer
 
 
+
 class RegisterView(APIView):
     def post(self, request):
         serializer = UserSerializer(data=request.data)
@@ -15,6 +16,12 @@ class RegisterView(APIView):
             serializer.save()
             return Response({'message': 'User created successfully'}, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+class allRegisteredUsers(APIView):
+    def get(self,request):
+        users = User.objects.all()
+        return users
 
 
 class LoginView(APIView):
